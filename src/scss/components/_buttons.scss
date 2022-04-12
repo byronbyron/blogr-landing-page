@@ -1,0 +1,51 @@
+.btn {
+    font-weight: 600;
+    border-radius: 2.5rem;
+    padding: 0.6875rem 2.5rem;
+    white-space: nowrap;
+    text-decoration: none;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+    }
+}
+
+.btn-link {
+    font-size: 1.125rem;
+    color: $headings;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, $very-light-red, $light-red);
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
+.btn-white {
+    color: $cta-text;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        background-color: rgba($white, 0.2);
+    }
+}
+
+.btn-ghost {
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        color: $cta-text;
+        background-color: $white;
+    }
+}
