@@ -20,7 +20,7 @@
   <header class="header">
     <div class="container">
       <nav class="header__navbar">
-        <a href="#" class="header__logo">
+        <a href="/" class="header__logo">
           <img src="images/logo.svg" alt="Blogr" width="101" height="40">
         </a>
 
@@ -34,9 +34,12 @@
         <div class="header__nav-collapse collapse" id="NavCollapse">
           <ul class="header__nav">
             <li class="header__nav-item">
-              <button class="header__nav-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NavProduct" aria-expanded="false" aria-controls="NavProduct"><span>Product</span><svg class="header__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg></button>
-              <div class="collapse" id="NavProduct">
-                <ul class="header__nav-dropdown">
+              <div class="dropdown">
+                <button class="header__dropdown-toggle btn dropdown-toggle" type="button" id="NavProduct" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </button>
+                
+                <ul class="header__dropdown-menu dropdown-menu" aria-labelledby="NavProduct">
                   <li><a href="#">Overview</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">Marketplace</a></li>
@@ -47,9 +50,12 @@
             </li>
 
             <li class="header__nav-item">
-              <button class="header__nav-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NavCompany" aria-expanded="false" aria-controls="NavCompany"><span>Company</span><svg class="header__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg></button>
-              <div class="collapse" id="NavCompany">
-                <ul class="header__nav-dropdown">
+              <div class="dropdown">
+                <button class="header__dropdown-toggle btn dropdown-toggle" type="button" id="NavCompany" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </button>
+                
+                <ul class="header__dropdown-menu dropdown-menu" aria-labelledby="NavCompany">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Team</a></li>
                   <li><a href="#">Blog</a></li>
@@ -59,9 +65,12 @@
             </li>
 
             <li class="header__nav-item">
-              <button class="header__nav-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NavConnect" aria-expanded="false" aria-controls="NavConnect"><span>Connect</span><svg class="header__arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg></button>
-              <div class="collapse" id="NavConnect">
-                <ul class="header__nav-dropdown">
+              <div class="dropdown">
+                <button class="header__dropdown-toggle btn dropdown-toggle" type="button" id="NavConnect" data-bs-toggle="dropdown" aria-expanded="false">
+                  Connect
+                </button>
+                
+                <ul class="header__dropdown-menu dropdown-menu" aria-labelledby="NavConnect">
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Newsletter</a></li>
                   <li><a href="#">LinkedIn</a></li>
@@ -72,7 +81,7 @@
           
           <div class="header__buttons">
             <a href="#" class="btn btn-link">Login</a>
-            <a href="#" class="btn btn-primary">Sign Up</a>
+            <a href="#" class="btn btn-white">Sign Up</a>
           </div>
         </div>
       </nav>

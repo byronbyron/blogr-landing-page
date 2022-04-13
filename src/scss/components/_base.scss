@@ -1,10 +1,8 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    color: var(--body-copy);
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: $body-copy;
+    background-color: $white;
 }
 
 h1, h2, h3 {
