@@ -66,7 +66,7 @@
         border: 0;
         width: 10px;
         height: 7px;
-        background: url('/images/icon-arrow-dark.svg') no-repeat top left;
+        background: url('../images/icon-arrow-dark.svg') no-repeat top left;
         background-size: 10px 7px;
         transition: transform 0.15s ease-in-out;
     }
@@ -195,7 +195,7 @@
         color: $white;
 
         &::after {
-            background-image: url('/images/icon-arrow-light.svg');
+            background-image: url('../images/icon-arrow-light.svg');
         }
 
         &:hover,
