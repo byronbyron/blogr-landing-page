@@ -7846,6 +7846,7 @@ h2, .h2, h3, .h3 {
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .section__body {
@@ -7889,6 +7890,38 @@ h2, .h2, h3, .h3 {
   margin: 0 -5.75rem 2.5rem;
 }
 
+.section__image--phones {
+  margin: -285px -1.625rem 2.5rem;
+}
+
+.section_1 {
+  padding-bottom: 65px;
+}
+
+.section_2 {
+  background: url("../images/bg-pattern-circles.svg") no-repeat -110px -240px, linear-gradient(to bottom, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  background-size: 605px, 100%;
+  border-radius: 0px 100px 0 100px;
+  min-height: 400px;
+  margin-top: 185px;
+  overflow: visible;
+  text-align: center;
+}
+.section_2 h2, .section_2 .h2 {
+  font-size: 2.25rem;
+  line-height: 1.35;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1.25rem;
+}
+.section_2 .section__text {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: -1.5rem;
+}
+
+.section_3 {
+  padding-top: 60px;
+}
+
 @media (min-width: 576px) {
   .section__image {
     margin-left: auto;
@@ -7914,6 +7947,20 @@ h2, .h2, h3, .h3 {
     min-height: 955px;
   }
 
+  .section_2 {
+    background: url("../images/bg-pattern-circles.svg") no-repeat -212px -510px, linear-gradient(to right, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+    text-align: left;
+    max-width: 1440px;
+    margin: 56px auto 0;
+    overflow: visible;
+  }
+  .section_2 .section__text {
+    margin: 0;
+    position: relative;
+    top: 14px;
+    left: -10px;
+  }
+
   .section_3 {
     padding-top: 114px;
     min-height: 902px;
@@ -7931,6 +7978,10 @@ h2, .h2, h3, .h3 {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .section_1 .section__body {
+    margin-right: -3px;
   }
 
   .section__text {
@@ -7953,6 +8004,15 @@ h2, .h2, h3, .h3 {
     top: 114px;
     right: 50%;
     width: 1000px;
+  }
+
+  .section__image--phones {
+    position: relative;
+  }
+  .section__image--phones img {
+    position: absolute;
+    top: 115px;
+    left: -15px;
   }
 }
 .header {
@@ -8118,7 +8178,7 @@ h2, .h2, h3, .h3 {
 
   .header__nav-item {
     position: relative;
-    margin-right: 0.25rem;
+    margin-right: 0.375rem;
   }
   .header__nav-item .collapse {
     position: absolute !important;
