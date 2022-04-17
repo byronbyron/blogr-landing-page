@@ -7663,15 +7663,6 @@ h2, .h2, h3, .h3 {
   margin-bottom: 2.5rem;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}
-
 .btn {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -7963,6 +7954,7 @@ h2, .h2, h3, .h3 {
 
   .section_3 {
     padding-top: 114px;
+    padding-bottom: 60px;
     min-height: 902px;
   }
   .section_3 .row {
@@ -8229,6 +8221,68 @@ h2, .h2, h3, .h3 {
     padding-right: 1.5rem;
     color: hsl(0deg, 0%, 100%);
     width: auto;
+  }
+}
+.footer {
+  background-color: hsl(240deg, 10%, 16%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 0 100px 0 0;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 5rem;
+}
+
+.footer__title {
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.footer__list {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+.footer__list li {
+  margin-bottom: 0.625rem;
+}
+.footer__list a {
+  color: hsl(240deg, 2%, 79%);
+  text-decoration: none;
+  display: inline-block;
+}
+.footer__list a:hover, .footer__list a:focus {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+    min-height: 360px;
+  }
+
+  .footer__title,
+.footer__list {
+    font-size: 0.9375rem;
+    position: relative;
+    top: 0.5rem;
+    left: -0.25rem;
+  }
+
+  .footer__list {
+    margin-bottom: 0;
   }
 }
 
